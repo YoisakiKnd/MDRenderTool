@@ -9,6 +9,7 @@
     "test": "vitest run",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc --noEmit",
     "build": "vite build",
+    "build:cf": "vite build && cp deploy/_headers dist/_headers",
     "preview": "vite preview",
     "audit:build": "node scripts/audit-build.ts",
     "stress": "node scripts/generate-stress.ts"
