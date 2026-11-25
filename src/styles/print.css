@@ -1,0 +1,24 @@
+#mdrt-print-root { display: none; }
+
+@page {
+  size: A4;
+  margin: 16mm 14mm;
+}
+
+@media print {
+  html, body { height: auto !important; overflow: visible !important; background: white !important; color-scheme: light; }
+  body > :not(#mdrt-print-root) { display: none !important; }
+  #mdrt-print-root {
+    display: block;
+    margin: 0;
+    color: var(--foreground);
+    background: var(--background);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  #mdrt-print-root h1, #mdrt-print-root h2, #mdrt-print-root h3 { break-after: avoid; }
+  #mdrt-print-root .export-block:has(> h1, > h2, > h3) { break-after: avoid; }
+  #mdrt-print-root :is(.mdrt-diagram, pre, table, blockquote) { break-inside: avoid; }
+  #mdrt-print-root > .export-block > svg { max-height: 245mm; width: auto; }
+  #mdrt-print-root thead { display:table-header-group; }
+}

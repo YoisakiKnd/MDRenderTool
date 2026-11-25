@@ -1,0 +1,9 @@
+node_modules/
+.pnpm-store/
+dist/
+coverage/
+mdrt-stress.md
+.DS_Store
+.env
+.env.*
+*.local

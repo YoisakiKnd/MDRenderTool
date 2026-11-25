@@ -1,0 +1,33 @@
+:root {
+  --hl-comment: #596479;
+  --hl-string: #116950;
+  --hl-keyword: #833b91;
+  --hl-number: #8c4308;
+  --hl-type: #165f9d;
+  --hl-function: #5341bb;
+  --hl-operator: #a23654;
+  --hl-punctuation: #505970;
+  --hl-attr: #006775;
+}
+
+:root.dark {
+  --hl-comment: #a6b0c5;
+  --hl-string: #8de0b5;
+  --hl-keyword: #e3a1f0;
+  --hl-number: #f4bd81;
+  --hl-type: #98ccff;
+  --hl-function: #b9afff;
+  --hl-operator: #f795b0;
+  --hl-punctuation: #bfc5d6;
+  --hl-attr: #7bd9e7;
+}
+
+.hl-comment { color: var(--hl-comment); }
+.hl-string { color: var(--hl-string); }
+.hl-keyword { color: var(--hl-keyword); }
+.hl-number { color: var(--hl-number); }
+.hl-type { color: var(--hl-type); }
+.hl-function { color: var(--hl-function); }
+.hl-operator { color: var(--hl-operator); }
+.hl-punctuation { color: var(--hl-punctuation); }
+.hl-attr { color: var(--hl-attr); }
