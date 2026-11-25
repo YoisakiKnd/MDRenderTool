@@ -62,7 +62,7 @@ export async function svgToPng(
   const markup = themedAlready ? graphic.svg : inlineSvgThemeStyles(graphic.svg, theme);
   const url = URL.createObjectURL(new Blob([markup], { type: 'image/svg+xml;charset=utf-8' }));
   try {
-    return await imageToPng(url, width * scale, height * scale, signal, transparent ? undefined : theme === 'dark' ? '#1c1c1e' : '#ffffff');
+    return await imageToPng(url, width * scale, height * scale, signal, transparent ? undefined : theme === 'dark' ? '#1d1e20' : '#faf9f6');
   } finally {
     URL.revokeObjectURL(url);
   }
